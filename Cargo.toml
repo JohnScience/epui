@@ -1,0 +1,36 @@
+[package]
+name = "epui"
+version = "0.1.0"
+authors = ["Dmitrii Demenev <demenev.dmitriy1@gmail.com>"]
+edition = "2021"
+rust-version = "1.56.1" # https://github.com/foresterre/cargo-msrv
+description = "Equisized (primitive) unsigned ints for primitive ints: u8 for u8, u16 for i16, etc"
+documentation = "https://docs.rs/epui"
+readme = "README.md"
+repository = "https://github.com/JohnScience/epui"
+license = "MIT OR Apache-2.0"
+# license-file | not needed
+keywords = ["primitive", "integer", "extension"]
+categories = ["no-std"]
+# workspace | not needed
+# build | not needed
+# links | not needed
+# exclude | not needed
+include = [
+    "/Cargo.toml",
+    "/LICENSE_APACHE",
+    "/LICENSE_MIT",
+    "/README.md",
+    "/src/lib.rs",
+    "/tests/**",
+]
+# publish | not needed
+# metadata | not needed
+# default-run | not needed
+autobins = false
+autoexamples = false
+autotests = false
+autobenches = false
+# resolver | not needed
+
+[dependencies]
