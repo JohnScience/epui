@@ -77,7 +77,7 @@ Type    | Size                   | Equisized primitive unsigned integer
 You can notice that `EquisizedPrimitiveUnsignedIntExt` is quite long to type. To make it shorter, you are advised to rename the imported trait as `EPUI`, the namesake for the crate. Because its uses are meant to be accompanied with [fully qualified syntax](https://doc.rust-lang.org/book/ch19-03-advanced-traits.html#fully-qualified-syntax-for-disambiguation-calling-methods-with-the-same-name), such shorthand is indispensible.
 
 ```rust
-  use epsi::EquisizedPrimitiveUnsignedIntExt as EPUI;
+  use epui::EquisizedPrimitiveUnsignedIntExt as EPUI;
   let a = -1i8;
   assert_eq!(a as <i8 as EPUI>::EquisizedPrimitiveUnsignedInt, u8::MAX);
 ```
